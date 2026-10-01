@@ -1,0 +1,137 @@
+:root {
+    --u0fuRed: #A12D37;
+}
+
+body {
+    background-color: #333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    div.container {
+        width: 800px;
+        border: 1px solid black;
+        margin: 0 auto; /* tb rl */
+        background-color: white;
+
+        section.middle {
+            padding: 3px 10px;
+            background-image: url('files/uofu_medallion_rt.gif');
+            background-position: bottom right;
+            background-repeat: no-repeat;
+
+            nav {
+                text-align: right;
+                font-size: 10px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 12px;
+                    border-right: 1px solid black;
+                    padding-right: 5px;
+                    margin-left: 3px;
+
+                    &:hover {
+                        text-decoration: underline;
+                        background-color: #767B4D;
+                        color: white;
+                    }
+
+                    &:last-of-type {
+                        border-right: none;
+                        padding-right: unset;
+                    }
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+
+                &.top-nav {
+                    text-transform: uppercase;
+                }
+
+                &.bottom-nav {
+                    text-transform: lowercase;
+                }
+            }
+
+            section.brown-box {
+                min-height: 400px;
+                background-color: #C8CAAF;
+                margin: 5px 0 50px;
+                padding: 10px 10px 10px 15px;
+
+                aside {
+                    border: 1px solid black;
+
+                    &.left {
+                        width: 30%;
+                        float: left;
+
+                        nav {
+                            a {
+                                display: block;
+                                text-align: left;
+                                text-decoration: none;
+                                border-bottom: 2px solid #505A2F;
+                                color: black;
+                                padding: 10px 0 10px;
+                                text-transform: uppercase;
+                                font-size: 10px;
+
+                            }
+                        }
+                    }
+
+                    div.links {
+                        margin: 50px 0 50px;
+                        width: 153px;
+
+                    }
+
+
+                    &.right {
+                        width: 60%;
+                        float: right;
+                        background-color: white;
+                        padding: 10px;
+
+                        h1 {
+                            text-transform: uppercase;
+                            color: #505A2F;
+                            border-bottom: 2px dashed var(--u0fuRed);
+
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+
+                        p {
+                            &.link {
+                                text-align: right;
+                            }
+
+                            a {
+                                color: var(--u0fuRed);
+                                border-bottom: 1px solid var(--u0fuRed);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: #616643;
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    }
+
+}
+
+
+
