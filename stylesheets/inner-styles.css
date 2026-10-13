@@ -1,119 +1,123 @@
 :root {
     --green: #676E3D;
 }
+
 body {
     background-color: #292827;
     display: flex;
     justify-content: center;
 
-section.container {
-    background-color: #fff;
-    width: 780px;
-    min-height: 600px;
+    section.container {
+        background-color: #fff;
+        width: 780px;
+        min-height: 600px;
 
-    section.middle {
-        display: flex;
+        section.middle {
+            display: flex;
 
-        > * {
-            border: 1px solid red;
-        }
+            > * {
+                border: 1px solid red;
+            }
 
-        section {
-            &.left-side {
-                width: 30%;
-                background-color: #F2F1F1;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+            section {
+                &.left-side {
 
-                nav {
-                    margin-top: 20px;
+                    nav {
+                    width: 30%;
+                    background-color: #F2F1F1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                        margin-top: 20px;
 
-                    a {
-                        color: black;
-                        text-decoration: none;
-                        font-size: 12px;
-                        border-right: 1px solid black;
-                        padding-right: 5px;
-                        margin-left: 3px;
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            font-size: 12px;
+                            border-right: 1px solid black;
+                            padding-right: 5px;
+                            margin-left: 3px;
 
 
-                        &:hover {
-                            text-decoration: underline;
-                            background-color: #767B4D;
-                            color: white;
+                            &:hover {
+                                text-decoration: underline;
+                                background-color: #767B4D;
+                                color: white;
+                            }
+
+
+                            .links {
+                                display: flex;
+                                flex-direction: column;
+                                border: 1px solid black;
+                                margin-bottom: 2rem;
+                            }
                         }
 
 
-                        .links {
-                            display: flex;
-                            flex-direction: column;
-                            border: 1px solid black;
-                        }
                     }
-
-                    &.right-side {
-                        width: 70%;
-                        min-height: 600px;
-                        display: flex;
-                        justify-content: space-between;
-                        flex-direction: column;
-                        padding: 5px 20px;
-
-                        nav {
-                            display: flex;
-                            justify-content: flex-end;
-                            gap: 5px;
-
-                            a{
-                                color:black;
-                                text-decoration: none;
-
-                                &:hover {
-                                    text-decoration: underline;
-
-                                }
-                            }
-
-                            &.top-nav {
-                                text-transform: uppercase;
-                                font-size: 10px;
-                            }
-
-                            main{
-                                border: 1px dotted black;
-                                img {
-                                    &.pull-right {
-                                        float: right;
-                                        width: 150px;
-                                        margin: 0 0 15px 15px;
-                                    }
-                                }
-                            }
-
-                            &.bottom-nav {
-                                text-transform: lowercase;
-                                font-size: 90%;
-                            }
-                        }
-                    }
-
 
                 }
 
+                &.right-side {
+                    width: 70%;
+                    min-height: 600px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 5px 20px;
+
+                    nav {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 5px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+
+                            }
+                        }
+
+                        &.top-nav {
+                            text-transform: uppercase;
+                            font-size: 10px;
+                        }
+
+                        &.bottom-nav {
+                            text-transform: lowercase;
+                            font-size: 90%;
+                        }
+                    }
+
+                    main {
+                        border: 1px dotted black;
+
+                        img {
+                            &.pull-right {
+                                float: right;
+                                width: 150px;
+                                margin: 0 0 15px 15px;
+                            }
+                        }
+                    }
+                }
             }
+        }
+
+        footer {
+            background-color: var(--green);
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
         }
     }
-                footer {
-                    background-color: var(--green);
-                    color: white;
-                    font-size: 11px;
-                    text-align: center;
-                    padding: 10px 0;
-                }
-            }
-        }
+}
 
 
 
