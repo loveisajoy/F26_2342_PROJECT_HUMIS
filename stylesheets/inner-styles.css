@@ -81,6 +81,9 @@ body {
                                 text-decoration: underline;
 
                             }
+                            &.active {
+                                font-weight: bold;
+                            }
                         }
 
                         &.top-nav {
