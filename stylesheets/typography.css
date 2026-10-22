@@ -44,6 +44,27 @@ body {
 
     p {
         text-align: justify;
-        font-size: .875rem;
+        font-size: 0.75rem;
+
+        &.learn-more{
+            text-align: right;
+
+            a{
+                color: red;
+                text-decoration: none;
+
+                &.hover{
+                    text-decoration: underline;
+                }
+            }
+
+
+        }
+       // @TODO come up with better name
+        .shrug {
+            font-size: 1.3rem;
+        color: #A12D37;
+        font-weight: bold;
+        }
     }
 }
