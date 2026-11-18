@@ -94,10 +94,15 @@ body {
                             text-transform: lowercase;
                             font-size: 90%;
                         }
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
                     }
 
                     main {
-                        border: 1px dotted black;
+                        border: none;
 
                         img {
                             &.pull-right {

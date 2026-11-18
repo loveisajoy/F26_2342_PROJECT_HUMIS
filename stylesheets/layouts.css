@@ -1,11 +1,11 @@
 section.horizontal-two-column-layout {
-    border: 3px dashed darkgray;
+    border: none;
     display: flex;
     min-height: 100%;
     padding: 10px;
 
     aside {
-        border: 1px dotted red;
+        border: 1px dotted grey;
 
         &.left-column {
             width: 30%;
