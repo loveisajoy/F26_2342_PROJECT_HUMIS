@@ -5,13 +5,13 @@ section.horizontal-two-column-layout {
     padding: 10px;
 
     aside {
-        border: 1px dotted grey;
 
         &.left-column {
-            width: 30%;
+            width: 35%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border-right: 1px dotted gray;
             p {
                 text-align: left;
             }
@@ -55,6 +55,28 @@ section.horizontal-two-column-layout {
         }
         &.right-column {
             width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+                text-align: left;
+            }
+
+            div.bottom {;
+                p {
+                    font-size: 0.5rem;
+
+                    span{
+                        display: block;
+                        &.name {
+
+                        }
+                    }
+                }
+                h6 {
+                    color: black;
+                }
+            }
         }
 
     }

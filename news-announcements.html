@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HUMIS "inner" pages layout</title>
+    <link rel="stylesheet" href="stylesheets/inner-styles.css">
+    <link rel="stylesheet" href="stylesheets/typography.css">
+    <link rel="stylesheet" href="stylesheets/images.css">
+    <link rel="stylesheet" href="stylesheets/layouts.css">
+    <style>
+        /*Local styles*/
+        section.middle {
+            section {
+                h2 {
+                    color: #a12d37;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    text-decoration-thickness: thick;
+                    margin: 0;
+                }
+                main {
+                    aside{
+                        &.right-column {
+                            h6 {
+                                color: black;
+                            }
+                            div {
+                                &.calender {
+                                    flex-wrap: nowrap;
+                                    img {
+                                        float: left;
+                                        width: 15px;
+                                        margin: 0 0 15px 15px;
+                                    }
+                                    h6 {
+                                        color: #a12d37;
+                                    }
+                                }
+                                &.DATE {
+                                    justify-content: flex-start;
+                                    h6 {
+                                        color: black;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section class="container">
+
+    <header>
+        <a href="index.html">
+            <img src="files/historyHeader.gif" alt="History homepage"/>
+        </a>
+
+        <img src="files/histBooks01.jpg" alt="History books"/>
+    </header>
+
+    <section class="middle">
+
+        <section class="left-side">
+
+            <nav>
+                <a href="about-us.html" class="active">About us</a>
+                <a href="faculty-and-staff.html">Faculty &amp; staff</a>
+                <a href="under-grad-students.html">Undergraduate Students</a>
+                <a href="courses-syllabi.html">Courses &amp; syllabi</a>
+                <a href="news-announcements.html">News &amp; announcements</a>
+                <a href="friends-alumni.html">Friends &amp; alumni</a>
+                <a href="contact-us.html">Contact us</a>
+
+            </nav>
+            <div class="links">
+
+                <a href="#">
+                    <img src="files/login-humis.gif" alt="Log into HUMIS"/>
+                </a>
+
+                <a href="#">
+                    <img src="files/login-cis.gif" alt="Log into CIS"/>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="right-side">
+            <nav class="secondary top-nav">
+                <a href="#">Campus Directory</a>
+                <a href="#">Department Calender</a>
+                <a href="#">Contact Us</a>
+                <a href="#">
+                    <img src="files/u_small.gif" alt="U of U logo"/>
+                </a>
+            </nav>
+
+            <main>
+                <section class="horizontal-two-column-layout">
+                    <aside class="left-column">
+                        <div class="top">
+                            <h6>
+                                NEWS &
+                                ANNOUNCEMENTS
+                            </h6>
+
+                            <div class="category top">
+                                <p>
+                                    Calendar
+                                <p>
+                                <div class="category sub">
+                                    <p> Newsletter </p>
+                                    <a href="faculty-and-staff-reg.html"> New Faculty </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="bottom">
+
+                        </div>
+
+                    </aside>
+
+                    <aside class="right-column">
+
+                        <div class="calender">
+                                <a href="#">
+                                    <img src="files/c-alender.png" alt="C logo"/>
+                                    <h6> >> VIEW THE DEPARTMENT CALENDAR </h6>
+                                </a>
+                        </div>
+
+                        <div class="DATE">
+                        <h6>
+                            MAY 28, 2005
+                            UMFA
+                            10 AM - 2 PM
+                        </h6>
+                        </div>
+
+                        <h6>
+                            “The Coolest Lecture in History”
+                        </h6>
+                        Professor Rhonda Ramsey
+
+                        <aside class="pull right">
+                            <img src="files/zoom-pottery.png" alt="pottery zoom"/>
+                        </aside>
+                        <p>
+                            Epeconsu lusquidium octusquit. Lossili caverma, unum
+                            fur quos culibut L. Ber pra sed sentemum screm pere
+                            mo eo, quo ublistius, quod crum ad re consimus aricie
+                            terum tus, Catum imo mei in ducontilla cri publinticae
+                            facienam terei propora ctorion damdiis vis andentil
+                            confesigilis ma, quam avocrei iam din aur iam aturem
+                            nem aus hacci pro ubli inihicaedet vit; non temerrato
+                            et vis es los, consus perterf intilica; horum nemus et
+                            con hae in dum, senductus cris audem mori patatiq
+                            uondi, ditemorit. Se atusquis, ium demerox imilium
+                            depopub licatiam tus horum li, cone pate quo aut con
+                            sulestario perfecu rnumus. Quoditri in vidi ficient L.
+                            Graedeatui se omperit.
+                        </p>
+
+
+
+                        <p class="learn-more">
+                            <a href="#">
+                                >> download the poster
+                            </a>
+                        </p>
+                    </aside>
+                </section>
+            </main>
+
+            <nav class="bottom-nav secondary">
+                <a href="#">Disclaimer</a>
+                <a href="#">Text only</a>
+                <a href="#">Webmaster</a>
+            </nav>
+
+        </section>
+    </section>
+
+    <footer>
+        380 SOUTH 1400 EAST | 211 C HALL | SALT LAKE CITY | UT | 84112 | PHONE 801.851.6126 | FAX 801.581.0580
+    </footer>
+
+</section>
+
+</body>
+</html>
